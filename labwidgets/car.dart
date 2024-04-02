@@ -59,6 +59,12 @@ class MyApp extends StatelessWidget {
                         Text("Share"),
                       ],
                     ),
+                    Padding(padding: EdgeInsets.all(20)),
+                    Text(
+                      "Essential Information",
+                      style: TextStyle(fontSize: 30),
+                    ),
+                    Padding(padding: EdgeInsets.all(20)),
                     SizedBox(height: 8.0),
                     Text('Year: 1975'),
                     Text('Make: Porsche'),
