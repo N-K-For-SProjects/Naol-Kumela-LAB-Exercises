@@ -67,15 +67,15 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  'Description',
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              ListTile(
+                leading: Icon(Icons.verified_rounded),
+                title: Text("Description"),
+                trailing: Icon(Icons.edit),
+              ),
+              ListTile(
+                leading: Icon(Icons.verified_rounded),
+                title: Text("Photos"),
+                trailing: Icon(Icons.edit),
               ),
             ],
           ),
