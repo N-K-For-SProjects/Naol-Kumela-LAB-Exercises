@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    Padding(padding: EdgeInsets.all(20)),
                     Row(
                       children: [
                         Icon(
@@ -64,7 +65,6 @@ class MyApp extends StatelessWidget {
                       "Essential Information",
                       style: TextStyle(fontSize: 30),
                     ),
-                    Padding(padding: EdgeInsets.all(20)),
                     SizedBox(height: 8.0),
                     Text('Year: 1975'),
                     Text('Make: Porsche'),
