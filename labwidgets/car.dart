@@ -61,9 +61,15 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                     Padding(padding: EdgeInsets.all(10)),
-                    Text(
-                      "Essential Information",
-                      style: TextStyle(fontSize: 30),
+                    Row(
+                      children: [
+                        Text(
+                          "Essential Information",
+                          style: TextStyle(fontSize: 30),
+                        ),
+                        Padding(padding: EdgeInsets.only(right: 45)),
+                        Icon(Icons.edit),
+                      ],
                     ),
                     SizedBox(height: 8.0),
                     Text('Year: 1975'),
