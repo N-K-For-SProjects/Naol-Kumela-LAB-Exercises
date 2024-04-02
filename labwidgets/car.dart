@@ -38,6 +38,27 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.favorite,
+                        ),
+                        Padding(padding: EdgeInsets.all(10)),
+                        Text("0"),
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(
+                          Icons.star_rate_outlined,
+                        ),
+                        Padding(padding: EdgeInsets.all(10)),
+                        Text("0"),
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(
+                          Icons.safety_check,
+                        ),
+                        Padding(padding: EdgeInsets.all(10)),
+                        Text("Share"),
+                      ],
+                    ),
                     SizedBox(height: 8.0),
                     Text('Year: 1975'),
                     Text('Make: Porsche'),
