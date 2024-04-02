@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Padding(padding: EdgeInsets.all(20)),
+                    Padding(padding: EdgeInsets.all(10)),
                     Row(
                       children: [
                         Icon(
@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
                         Text("Share"),
                       ],
                     ),
-                    Padding(padding: EdgeInsets.all(20)),
+                    Padding(padding: EdgeInsets.all(10)),
                     Text(
                       "Essential Information",
                       style: TextStyle(fontSize: 30),
