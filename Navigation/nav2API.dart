@@ -20,6 +20,20 @@ class _CourseAppState extends State<CourseApp> {
         code: "SiTE-001",
         title: "Introduction To Programming",
         description: "Computer Organization, Architecture, Programming"),
+    Course(
+        code: "SiTE-002",
+        title: "Data Structures and Algorithms",
+        description:
+            "Arrays, Linked Lists, Stacks, Queues, Trees, Sorting, Searching"),
+    Course(
+        code: "SiTE-003",
+        title: "Database Systems",
+        description: "SQL, Relational Data Model, Normalization, Indexing"),
+    Course(
+        code: "SiTE-004",
+        title: "Operating Systems",
+        description:
+            "Processes, Threads, Concurrency, Memory Management, Scheduling")
   ];
 
   void _tabHandler(Course course) {
