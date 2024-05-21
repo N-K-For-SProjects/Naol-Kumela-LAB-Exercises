@@ -1,11 +1,20 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+
 }
 
 android {
     namespace = "com.example.composetutorial"
     compileSdk = 34
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.13"
+    }
 
     defaultConfig {
         applicationId = "com.example.composetutorial"
@@ -43,4 +52,25 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    dependencies {
+
+        val composeBom = platform("androidx.compose:compose-bom:2024.05.00")
+        implementation(composeBom)
+        androidTestImplementation(composeBom)
+
+        implementation("androidx.compose.material3:material3")
+        implementation("androidx.compose.ui:ui-tooling-preview")
+        debugImplementation("androidx.compose.ui:ui-tooling")
+        androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+        debugImplementation("androidx.compose.ui:ui-test-manifest")
+        implementation("androidx.compose.material:material-icons-core")
+        implementation("androidx.compose.material:material-icons-extended")
+        implementation("androidx.compose.material3:material3-window-size-class")
+        implementation("androidx.activity:activity-compose:1.9.20")
+        implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+        implementation("androidx.compose.runtime:runtime-livedata")
+        implementation("androidx.compose.runtime:runtime-rxjava2")
+
+    }
 }
