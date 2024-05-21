@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ComposeTutorial"
+rootProject.name = "CounterApp"
 include(":app")
  
